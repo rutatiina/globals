@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rutatiina\\Expense\\": "src/"
+            "Rutatiina\\Globals\\": "src/"
         }
     },
     "extra": {
