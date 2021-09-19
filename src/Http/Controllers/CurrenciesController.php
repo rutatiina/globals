@@ -1,8 +1,7 @@
 <?php
 
-namespace Rutatiina\Http\Controllers\Globals;
+namespace Rutatiina\Globals\Http\Controllers;
 
-use App;
 use App\Http\Controllers\Controller;
 
 class CurrenciesController extends Controller
