@@ -7,10 +7,6 @@ use App\Http\Controllers\Controller;
 
 class CountriesController extends Controller
 {
-
-    public function __construct()
-    {}
-
     public function index($options)
     {
         switch ($options) {
