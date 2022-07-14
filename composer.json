@@ -17,7 +17,10 @@
     "autoload": {
         "psr-4": {
             "Rutatiina\\Globals\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/Helper.php"
+        ]
     },
     "extra": {
         "laravel": {
