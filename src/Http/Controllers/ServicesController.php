@@ -4,7 +4,7 @@ namespace Rutatiina\Globals\Http\Controllers;
 
 use App;
 use App\Http\Controllers\Controller;
-use Rutatiina\Admin\Models\Service;
+use Rutatiina\Qbuks\Models\Service;
 
 class ServicesController extends Controller
 {
