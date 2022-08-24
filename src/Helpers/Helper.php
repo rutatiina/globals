@@ -3,6 +3,14 @@
 use Illuminate\Support\Facades\Auth;
 use Rutatiina\FinancialAccounting\Models\Forex\OpenExchangeRate;
 
+//prepend the folder for mix resources
+if (!function_exists('rgMix')) {
+    function rgMix($path, $manifestDirectory = '')
+    {
+        return '/laravel_mix'.mix($path, $manifestDirectory = '');
+    }
+}
+
 if (!function_exists('rg_contact_details_check')) {
     function rg_contact_details_check()
     {
@@ -135,6 +143,7 @@ if (!function_exists('exchangeRates')) {
         return $exchangeRates;
     }
 }
+
 if (!function_exists('humanize')) {
     function humanize($str)
     {
