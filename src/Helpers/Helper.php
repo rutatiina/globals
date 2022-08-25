@@ -7,7 +7,7 @@ use Rutatiina\FinancialAccounting\Models\Forex\OpenExchangeRate;
 if (!function_exists('rgMix')) {
     function rgMix($path, $manifestDirectory = '')
     {
-        return '/laravel_mix'.mix($path, $manifestDirectory = '');
+        return '/web/assets'.mix($path, $manifestDirectory = '');
     }
 }
 
