@@ -1,6 +1,7 @@
 <?php
 
 //Global routes
+Route::get('global/notifications/{options}', 'Rutatiina\Globals\Http\Controllers\NotificationController@index');
 Route::get('global/services/{options}', 'Rutatiina\Globals\Http\Controllers\ServicesController@index');
 Route::get('global/currencies/{options}', 'Rutatiina\Globals\Http\Controllers\CurrenciesController@index');
 Route::get('global/countries/{options}', 'Rutatiina\Globals\Http\Controllers\CountriesController@index');
