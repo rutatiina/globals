@@ -1,12 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\App;
 use Rutatiina\FinancialAccounting\Models\Forex\OpenExchangeRate;
 
 //prepend the folder for mix resources
 if (!function_exists('rgMix')) {
     function rgMix($path, $manifestDirectory = '')
     {
+        $path = (App::environment('local')) ? '/dev'.$path : $path;
         return '/web/assets'.mix($path, $manifestDirectory);
     }
 }
